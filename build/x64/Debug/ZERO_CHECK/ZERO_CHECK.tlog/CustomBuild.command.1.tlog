@@ -1,0 +1,10 @@
+^D:\SANGWONS_ROOM\01_GITHUBREPO\GTEST_EXAMPLE\BUILD\CMAKEFILES\35DF2A70DEC5DE07EEA20003AE3CEAF4\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Sangwons_Room/01_GitHubRepo/gtest_example -BD:/Sangwons_Room/01_GitHubRepo/gtest_example/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Sangwons_Room/01_GitHubRepo/gtest_example/build/my_project.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
